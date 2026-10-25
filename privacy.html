@@ -18,11 +18,13 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="muted">ClipEngine. Last updated October 21, 2026.</p>
+  <p class="muted">ClipEngine. Last updated October 25, 2026.</p>
 
   <h2>What ClipEngine is</h2>
-  <p>ClipEngine is a personal automation tool operated by a single developer to upload short
-     gaming compilations to the developer's own YouTube channel. It is not offered to the public.</p>
+  <p>ClipEngine is a personal automation tool operated by a single developer to post short
+     highlight videos to the developer's own social media accounts (YouTube and, where enabled,
+     TikTok). It is not offered to the public. People the developer authorizes to run it may only
+     connect accounts the developer owns or manages.</p>
 
   <h2>Google user data we access</h2>
   <p>ClipEngine requests two Google OAuth scopes for the developer's own Google account only:</p>
@@ -32,19 +34,44 @@
         channels in order to find clip sources.</li>
   </ul>
 
-  <h2>How data is used and stored</h2>
-  <p>The OAuth token is stored only on the developer's own computer and is used only to perform the
-     actions above. ClipEngine does not collect, sell, share, or transfer Google user data to any
-     third party, and does not use it for advertising. No data from any other user is accessed.</p>
+  <h2>TikTok user data we access</h2>
+  <p>If TikTok posting is enabled, ClipEngine requests these TikTok scopes for the developer's own
+     TikTok account only:</p>
+  <ul>
+    <li><strong>user.info.basic</strong>: to show which account is connected (display name and
+        avatar) before posting.</li>
+    <li><strong>video.publish</strong> and/or <strong>video.upload</strong>: to post finished videos,
+        or send them to the account's drafts, for the developer to review.</li>
+  </ul>
+  <p>ClipEngine does not read followers, messages, comments, analytics, or any other TikTok data.</p>
 
-  <h2>Revoking access</h2>
-  <p>Access can be revoked at any time at
-     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+  <h2>How data is used and stored</h2>
+  <p>OAuth tokens are stored only on the developer's own computer and are used only to perform the
+     actions above. ClipEngine does not collect, sell, share, or transfer Google or TikTok user data
+     to any third party, and does not use it for advertising. No data from any other user is
+     accessed.</p>
+
+  <h2>Content processing</h2>
+  <p>To find and check clips, ClipEngine reads public information about whitelisted creators'
+     content (video titles, public comments, Twitch clip listings) and sends short segments of that
+     public content to Google's Gemini API for analysis, under Google's API terms. It does not send
+     any account tokens or personal data of viewers. Clips are credited to their creators, and a
+     creator can ask for removal using the contact link below.</p>
+
+  <h2>Revoking access and deleting data</h2>
+  <p>Google access can be revoked at any time at
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and
+     TikTok access from the TikTok app under Settings and privacy → Security → Apps and services
+     permissions. Revoking access, or deleting ClipEngine's token file from the developer's computer,
+     ends all access; ClipEngine keeps no other copy of account data.
      ClipEngine's use of information received from Google APIs adheres to the
      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
      User Data Policy</a>, including the Limited Use requirements. Uploads are also subject to the
      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
-     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. TikTok posting is subject
+     to the <a href="https://www.tiktok.com/legal/page/us/terms-of-service/en">TikTok Terms of Service</a>
+     and <a href="https://www.tiktok.com/legal/page/us/privacy-policy/en">TikTok Privacy Policy</a>.
+     See also our <a href="terms.html">Terms of Service</a>.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: open an issue at
